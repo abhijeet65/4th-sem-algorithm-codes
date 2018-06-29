@@ -1,0 +1,6 @@
+git branch
+git branch branch_name
+git add .
+git commit -m "name"
+git push 
+
