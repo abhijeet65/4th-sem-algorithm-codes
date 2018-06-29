@@ -29,34 +29,6 @@ h[k]=v;
 
 
 
-void main()
-{
-int i,j,size,temp,h[10],n;
-printf("Entre the number of elemts\n");
-scanf("%d",&n);
-for(i=1;i<=n;i++)
-scanf("%d",&h[i]);
-heapify(h,n);
-
-printf("Elements heapified\n");
-
-for(i=1;i<=n;i++)
-printf("%d ",h[i]);
-
-for(i=n;i>=1;i--)
-{
-temp=h[1];
-h[1]=h[i];
-h[i]=temp;
-size=i-1;
-heapify(h,size);
-}
-
-for(i=1;i<=n;i++)
-{
-printf("%d ",h[i]);
-}
-}
 
 
 
